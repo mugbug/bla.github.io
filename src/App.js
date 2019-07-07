@@ -1,25 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import WordArtText from './components/WordArtText';
+import WordArtThemes from './components/WordArtText/Themes';
+import Gallery from './components/Gallery';
+
+// import './components/SparklyCursor';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <WordArtText text='Oi Pedro!' type={WordArtThemes.PURPLE} />
+      <Gallery />
+    </>
   );
 }
 
