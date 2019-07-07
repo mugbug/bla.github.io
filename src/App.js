@@ -17,24 +17,36 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
+
+const ContainerImage = styled.div`
+  position: absolute;
+  height: 100%;
+  width: 100%;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 `;
 
-const TitleContainer = styled(Container)`
+const TitleContainerImage = styled(ContainerImage)`
   background-image: url(${bg});
-`;
+  opacity: 0.6;
+`
 
 function App() {
   return (
     <>
-      <TitleContainer>
-        <WordArtText text='We love you Marina!' type={WordArtThemes.RAINBOW} />
+      <Container>
+        <TitleContainerImage />
+        <WordArtText text='We love you Marina!' type={WordArtThemes.RAINBOW} fontSize='6em' />
         <div style={{marginTop: '9em'}} />
-        <WordArtText text='Este site é destinado a guardar a lembrança dos ótimos momentos que vivemos juntxs aqui no Brasil até a corrente data de 12/07/2019.' fontSize='3em' type={WordArtThemes.PURPLE} />
-      </TitleContainer>
+        <WordArtText
+          text='Este site é destinado a guardar a lembrança dos ótimos momentos que vivemos juntxs aqui no Brasil até a corrente data de 12/07/2019.'
+          fontSize='3em'
+          type={WordArtThemes.PURPLE}
+        />
+      </Container>
       {/* <Gallery /> */}
     </>
   );
