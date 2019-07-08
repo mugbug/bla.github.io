@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import WordArtText from './components/WordArtText';
 import WordArtThemes from './components/WordArtText/Themes';
 import Gallery from './components/Gallery';
+import Footer from './components/Footer';
 
 // import './components/SparklyCursor';
 
@@ -41,13 +42,18 @@ function App() {
         <TitleContainerImage />
         <WordArtText text='We love you Marina!' type={WordArtThemes.RAINBOW} fontSize='6em' />
         <div style={{marginTop: '9em'}} />
-        <WordArtText
-          text='Este site é destinado a guardar a lembrança dos ótimos momentos que vivemos juntxs aqui no Brasil até a corrente data de 12/07/2019.'
-          fontSize='3em'
-          type={WordArtThemes.PURPLE}
-        />
+        <div style={{padding: '0 8%'}}>
+          <WordArtText
+            text='Este site é destinado a guardar a lembrança dos ótimos momentos que vivemos juntxs no Brasil até a data de 12/07/2019.'
+            fontSize='3em'
+            type={WordArtThemes.PURPLE}
+          />
+        </div>
       </Container>
-      {/* <Gallery /> */}
+      <Container>
+        <Gallery />
+      </Container>
+      <Footer />
     </>
   );
 }
