@@ -12,6 +12,10 @@ const MyImage = styled.img`
 const Gallery = () => {
   const myImage = require('../images/image.png');
 
+  const stop = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <AliceCarousel
       mouseDragEnabled 
@@ -29,11 +33,11 @@ const Gallery = () => {
         }
       }}
     >
-      <MyImage src={myImage} />
-      <MyImage src={myImage} />
-      <MyImage src={myImage} />
-      <MyImage src={myImage} />
-      <MyImage src={myImage} />
+      <MyImage src={myImage} onMouseDown={stop}/>
+      <MyImage src={myImage} onMouseDown={stop}/>
+      <MyImage src={myImage} onMouseDown={stop}/>
+      <MyImage src={myImage} onMouseDown={stop}/>
+      <MyImage src={myImage} onMouseDown={stop}/>
     </AliceCarousel>
   );
 }
