@@ -12,6 +12,7 @@ import Squad from './components/PhotoContainers/Squad';
 import Tabuas from './components/PhotoContainers/Tabuas';
 import Footer from './components/Footer';
 import Player from './components/Player';
+import GalleryGrid from './components/GalleryGrid';
 
 // import './components/SparklyCursor';
 
@@ -65,6 +66,7 @@ function App() {
       <Julia />
       <Squad />
       <Tabuas />
+      <GalleryGrid />
       <Footer />
     </>
   );

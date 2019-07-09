@@ -16,6 +16,7 @@ const PlayerContainer = styled.div`
   justify-content: flex-start;
   position: absolute;
 `;
+
 class Player extends React.Component {
   constructor(props) {
     super(props);
