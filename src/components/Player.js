@@ -7,6 +7,15 @@ const PlayerButton = styled.button`
   outline: none;
 `;
 
+const PlayerContainer = styled.div`
+  height: ${window.innerHeight}px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+`;
 class Player extends React.Component {
   constructor(props) {
     super(props);
@@ -31,9 +40,11 @@ class Player extends React.Component {
 
   render() {
     return (
+      <PlayerContainer>
         <PlayerButton>
           <img src={this.buttonIcon()} onClick={this.play} />
         </PlayerButton>
+      </PlayerContainer>
     );
   }
 }

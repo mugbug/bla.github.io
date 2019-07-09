@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.alice-carousel {
+  margin: 0 !important;
+  margin-top: 3em !important;
+  z-index: 2;
+}

@@ -3,7 +3,13 @@ import styled from 'styled-components';
 
 import WordArtText from './components/WordArtText';
 import WordArtThemes from './components/WordArtText/Themes';
-import Gallery from './components/Gallery';
+import Bdz from './components/PhotoContainers/Bdz';
+import Food from './components/PhotoContainers/Food';
+import Gaia from './components/PhotoContainers/Gaia';
+import Marina from './components/PhotoContainers/Marina';
+import Julia from './components/PhotoContainers/Julia';
+import Squad from './components/PhotoContainers/Squad';
+import Tabuas from './components/PhotoContainers/Tabuas';
 import Footer from './components/Footer';
 import Player from './components/Player';
 
@@ -36,24 +42,12 @@ const TitleContainerImage = styled(ContainerImage)`
   opacity: 0.6;
 `
 
-const PlayerContainer = styled.div`
-  height: ${window.innerHeight}px;
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-`;
-
 function App() {
   return (
     <>
       <Container>
         <TitleContainerImage />
-        <PlayerContainer>
-          <Player />
-        </PlayerContainer>
+        <Player />
         <WordArtText text='We love you Marina!' type={WordArtThemes.RAINBOW} fontSize='6em' />
         <div style={{ marginTop: '9em' }} />
         <div style={{ padding: '0 8%' }}>
@@ -64,12 +58,17 @@ function App() {
           />
         </div>
       </Container>
-      <Container>
-        <Gallery />
-      </Container>
+      <Bdz />
+      <Food />
+      <Gaia />
+      <Marina />
+      <Julia />
+      <Squad />
+      <Tabuas />
       <Footer />
     </>
   );
 }
 
 export default App;
+export { Container };

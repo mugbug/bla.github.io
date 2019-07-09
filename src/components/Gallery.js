@@ -11,17 +11,12 @@ const ImageContainer = styled.div`
 `
 
 const MyImage = styled.img`
-  width: 80%;
-  height: auto;
+  max-width: 100%;
+  width: auto;
+  height: 300px;
 `;
 
-const Gallery = () => {
-  const myImage1 = require('../images/bdz 1.jpg');
-  const myImage2 = require('../images/bdz 2.jpg');
-  const myImage3 = require('../images/bdz 3.jpg');
-  const myImage4 = require('../images/bdz 4.jpg');
-  const myImage5 = require('../images/bdz 5.jpg');
-
+const Gallery = ({ images }) => {
   const stop = (e) => {
     e.preventDefault();
   };
@@ -42,21 +37,11 @@ const Gallery = () => {
         }
       }}
     >
-      <ImageContainer>
-        <MyImage src={myImage1} onMouseDown={stop}/>
-      </ImageContainer>
-      <ImageContainer>
-        <MyImage src={myImage2} onMouseDown={stop}/>
-      </ImageContainer>
-      <ImageContainer>
-        <MyImage src={myImage3} onMouseDown={stop}/>
-      </ImageContainer>
-      <ImageContainer>
-        <MyImage src={myImage4} onMouseDown={stop}/>
-      </ImageContainer>
-      <ImageContainer>
-        <MyImage src={myImage5} onMouseDown={stop}/>
-      </ImageContainer>
+      {images.map(image => (
+        <ImageContainer>
+          <MyImage src={image} onMouseDown={stop}/>
+        </ImageContainer>
+      ))}
     </AliceCarousel>
   );
 }
