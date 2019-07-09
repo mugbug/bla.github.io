@@ -23,23 +23,23 @@ const Gallery = ({ images }) => {
 
   return (
     <AliceCarousel
-      mouseDragEnabled 
+      mouseDragEnabled
       dotsDisabled={false}
       responsive={{
         0: {
-            items: 1
+          items: 1
         },
         560: {
-          items: 2
+          items: 3
         },
         1024: {
-            items: 3
+          items: 4
         }
       }}
     >
       {images.map(image => (
         <ImageContainer>
-          <MyImage src={image} onMouseDown={stop}/>
+          <MyImage src={image} onMouseDown={stop} />
         </ImageContainer>
       ))}
     </AliceCarousel>

@@ -1,11 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
-const PlayerButton = styled.button`
-  border: 0px;
-  background-color: transparent;
-  outline: none;
-`;
+import TransparentButton from './TransparentButton';
 
 const PlayerContainer = styled.div`
   height: ${window.innerHeight}px;
@@ -42,9 +37,9 @@ class Player extends React.Component {
   render() {
     return (
       <PlayerContainer>
-        <PlayerButton>
+        <TransparentButton>
           <img src={this.buttonIcon()} onClick={this.play} />
-        </PlayerButton>
+        </TransparentButton>
       </PlayerContainer>
     );
   }

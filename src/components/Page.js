@@ -1,16 +1,21 @@
 import React from 'react';
 import { Container } from '../App';
-import Gallery from './Gallery';
+import GalleryGrid from './GalleryGrid';
 import Player from './Player';
 
 import WordArtText from './WordArtText';
-import WordArtThemes from './WordArtText/Themes';
 
-const Page = ({text, type, images}) => (
-  <Container>
+const Page = ({text, message, ps, type, images}) => (
+  <Container style={{height: 'auto', margin: '4em 0'}}>
     <Player />
     <WordArtText text={text} type={type} />
-    <Gallery images={images} />
+    <p style={{padding: '0 10%'}}>
+      {message}
+    </p>
+    <GalleryGrid images={images} />
+    <p style={{padding: '0 10%'}}>
+      {ps}
+    </p>
   </Container>
 );
 

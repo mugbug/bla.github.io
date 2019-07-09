@@ -3,18 +3,10 @@ import styled from 'styled-components';
 
 import WordArtText from './components/WordArtText';
 import WordArtThemes from './components/WordArtText/Themes';
-import Bdz from './components/PhotoContainers/Bdz';
-import Food from './components/PhotoContainers/Food';
-import Gaia from './components/PhotoContainers/Gaia';
-import Marina from './components/PhotoContainers/Marina';
-import Julia from './components/PhotoContainers/Julia';
-import Squad from './components/PhotoContainers/Squad';
-import Tabuas from './components/PhotoContainers/Tabuas';
+import Intro from './components/PhotoContainers/Intro';
 import Footer from './components/Footer';
 import Player from './components/Player';
-import GalleryGrid from './components/GalleryGrid';
-
-// import './components/SparklyCursor';
+import SeeYa from './components/PhotoContainers/SeeYa';
 
 const bg = require('./images/header-bg.jpg');
 
@@ -59,14 +51,8 @@ function App() {
           />
         </div>
       </Container>
-      <Bdz />
-      <Food />
-      <Gaia />
-      <Marina />
-      <Julia />
-      <Squad />
-      <Tabuas />
-      <GalleryGrid />
+      <Intro />
+      <SeeYa />
       <Footer />
     </>
   );
