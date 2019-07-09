@@ -5,6 +5,7 @@ import WordArtText from './components/WordArtText';
 import WordArtThemes from './components/WordArtText/Themes';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
+import Player from './components/Player';
 
 // import './components/SparklyCursor';
 
@@ -35,14 +36,27 @@ const TitleContainerImage = styled(ContainerImage)`
   opacity: 0.6;
 `
 
+const PlayerContainer = styled.div`
+  height: ${window.innerHeight}px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+`;
+
 function App() {
   return (
     <>
       <Container>
         <TitleContainerImage />
+        <PlayerContainer>
+          <Player />
+        </PlayerContainer>
         <WordArtText text='We love you Marina!' type={WordArtThemes.RAINBOW} fontSize='6em' />
-        <div style={{marginTop: '9em'}} />
-        <div style={{padding: '0 8%'}}>
+        <div style={{ marginTop: '9em' }} />
+        <div style={{ padding: '0 8%' }}>
           <WordArtText
             text='Este site é destinado a guardar a lembrança dos ótimos momentos que vivemos juntxs no Brasil até a data de 12/07/2019.'
             fontSize='3em'
