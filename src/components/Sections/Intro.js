@@ -11,7 +11,7 @@ const Marina = () => (
     `}
     images = {[
       [
-        require('../../images/bdz 1.jpg'),
+        require('../../images/bianca 8.jpg'),
         require('../../images/marina plena 5.gif'),
       ],
       [
@@ -20,7 +20,7 @@ const Marina = () => (
       ],
       [
         require('../../images/tabuas 2.jpg'),
-        require('../../images/comida 3.jpg'),
+        require('../../images/jack 1.jpg'),
       ],
       [
         require('../../images/marina plena 8.jpg'),

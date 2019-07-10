@@ -5,17 +5,14 @@ import Player from './Player';
 
 import WordArtText from './WordArtText';
 
-const Page = ({text, message, ps, type, images}) => (
-  <Container style={{height: 'auto', margin: '4em 0'}}>
+const Page = ({ text, message, type, images }) => (
+  <Container style={{height: 'auto', margin: '4em 0 7em 0'}}>
     <Player />
     <WordArtText text={text} type={type} />
-    <p style={{padding: '0 10%'}}>
+    <p style={{padding: '0 calc(10% + 6px)'}}>
       {message}
     </p>
     <GalleryGrid images={images} />
-    <p style={{padding: '0 10%'}}>
-      {ps}
-    </p>
   </Container>
 );
 

@@ -3,10 +3,11 @@ import styled from 'styled-components';
 
 import WordArtText from './components/WordArtText';
 import WordArtThemes from './components/WordArtText/Themes';
-import Intro from './components/PhotoContainers/Intro';
+import Intro from './components/Sections/Intro';
 import Footer from './components/Footer';
 import Player from './components/Player';
-import SeeYa from './components/PhotoContainers/SeeYa';
+import SeeYa from './components/Sections/SeeYa';
+import MissU from './components/Sections/MissU';
 
 const bg = require('./images/header-bg.jpg');
 
@@ -52,6 +53,7 @@ function App() {
         </div>
       </Container>
       <Intro />
+      <MissU />
       <SeeYa />
       <Footer />
     </>
