@@ -13,11 +13,12 @@ const Content = styled.div`
   flex-direction: row;
   z-index: 10;
   justify-content: space-between;
-
-  & img {
-    margin-left: 10%;
-    width: 39%
-  }
+`;
+  
+  const SquadPhoto = styled.img`
+  margin-left: 10%;
+  width: 39%;
+  height: -webkit-fill-available;
 `;
 
 const Column = styled.div`
@@ -31,13 +32,10 @@ const Column = styled.div`
 
   justify-content: space-around;
   text-align: end;
-
-  & img {
-    margin-left: 0;
-  }
 `;
 
 const TextWithHint = styled(TransparentButton)`
+  font-family: 'Raleway'; 
   font-family: 'Raleway';
   font-size: 1.5em;
   cursor: default;
@@ -50,7 +48,7 @@ const SeeYa = () => {
     <Player />
     <WordArtText text='Até logo' type={WordArtThemes.SUPERHERO} marginBottom='1em'/>
     <Content>
-      <img src={require('../../images/squad 1.jpg')} alt='Best squad' />
+      <SquadPhoto src={require('../../images/squad 1.jpg')} alt='Best squad' />
       <Column>
         <TextWithHint title='Duvido você clicar aqui'>
           É claro que vamos sentir muita saudade de você -- meios tecnológicos estão ai pra ajudar nisso.
