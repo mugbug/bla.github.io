@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const Footer = () => (
   <Container>
-    Made with 💛by Pedro and Julia.
+    Made with&nbsp;<span role='img' aria-label='Love'>💛</span>by Pedro and Julia.
   </Container>
 );
 

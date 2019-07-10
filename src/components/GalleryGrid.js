@@ -38,11 +38,11 @@ const GalleryGrid = ({ images }) => {
       images.map((columnImages) => (
         <Column columnCount={images.length}> {
           columnImages.map((image) => (
-            image[0] != '/'
+            image[0] !== '/'
               ? <p style={{ padding: '0 10%' }}>
                   {image}
                 </p>
-              : <img src={image} style={{ width: "100%" }} />
+              : <img src={image} style={{ width: "100%" }} alt='' />
           ))
         }
         </Column>

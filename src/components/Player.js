@@ -34,11 +34,13 @@ class Player extends React.Component {
     })
   }
 
+  getImageDesc = () => this.state.play ? 'play' : 'pause';
+
   render() {
     return (
       <PlayerContainer>
         <TransparentButton>
-          <img src={this.buttonIcon()} onClick={this.play} />
+          <img src={this.buttonIcon()} onClick={this.play} alt={this.getImageDesc()} />
         </TransparentButton>
       </PlayerContainer>
     );

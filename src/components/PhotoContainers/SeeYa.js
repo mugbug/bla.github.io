@@ -50,7 +50,7 @@ const SeeYa = () => {
     <Player />
     <WordArtText text='Até logo' type={WordArtThemes.SUPERHERO} marginBottom='1em'/>
     <Content>
-      <img src={require('../../images/squad 1.jpg')} />
+      <img src={require('../../images/squad 1.jpg')} alt='Best squad' />
       <Column>
         <TextWithHint title='Duvido você clicar aqui'>
           É claro que vamos sentir muita saudade de você -- meios tecnológicos estão ai pra ajudar nisso.
@@ -58,8 +58,12 @@ const SeeYa = () => {
           mesmo sabendo de todos os desafios que estão por vir. We got your back!
         </TextWithHint>
         {showGif 
-          ? <img src={require('../../images/hangloose.gif')} onClick={() => updateShowGif(false)} />
-          : <TransparentButton title='Duvido você clicar aqui' style={{ fontSize: '2em' }} onClick={() => updateShowGif(true)}> 🤙</TransparentButton>
+          ? <img src={require('../../images/hangloose.gif')} onClick={() => updateShowGif(false)} alt='Foto exclusiva da Marina na Holanda' />
+          : (
+            <TransparentButton title='Duvido você clicar aqui' style={{ fontSize: '2em' }} onClick={() => updateShowGif(true)}>
+              <span role='img' aria-label='Hangloose'>🤙</span>
+            </TransparentButton>
+          )
         }
       </Column>
     </Content>
