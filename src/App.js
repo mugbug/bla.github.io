@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Player from './components/Player';
 import SeeYa from './components/Sections/SeeYa';
 import MissU from './components/Sections/MissU';
+import { RotateIn, BounceInRight } from './components/Animation';
 
 const bg = require('./images/header-bg.jpg');
 
@@ -42,14 +43,18 @@ function App() {
       <Container>
         <TitleContainerImage />
         <Player />
-        <WordArtText text='We love you Marina!' type={WordArtThemes.RAINBOW} fontSize='6em' />
+        <RotateIn duration={2}>
+          <WordArtText text='We love you Marina!' type={WordArtThemes.RAINBOW} fontSize='6em' />
+        </RotateIn>
         <div style={{ marginTop: '9em' }} />
         <div style={{ padding: '0 8%' }}>
+        <BounceInRight duration={2} >
           <WordArtText
-            text='Este site é destinado a guardar a lembrança dos ótimos momentos que vivemos juntxs no Brasil até a data de 12/07/2019.'
-            fontSize='3em'
-            type={WordArtThemes.PURPLE}
+              text='Este site é destinado a guardar a lembrança dos ótimos momentos que vivemos juntxs no Brasil até a data de 12/07/2019.'
+              fontSize='3em'
+              type={WordArtThemes.PURPLE}
           />
+        </BounceInRight>
         </div>
       </Container>
       <Intro />
