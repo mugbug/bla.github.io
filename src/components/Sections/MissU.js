@@ -25,7 +25,9 @@ const MissU = () => (
         require('../../images/gaia 7.jpg'),
         require('../../images/me and u 2.gif'),
       ]
-    ]}/>
+    ]}
+    animateIn='flipInX'
+    animateOut='flipOutY'/>
 );
 
 export default MissU;

@@ -26,7 +26,9 @@ const Marina = () => (
         require('../../images/marina plena 8.jpg'),
         require('../../images/me and u 3.jpg'),
       ],
-    ]}/>
+    ]}
+    animateIn='bounceInLeft'
+    animateOut='bounceOutRight'/>
 );
 
 export default Marina;
