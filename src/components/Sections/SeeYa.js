@@ -74,6 +74,7 @@ const SeeYa = () => {
     </Column>
     </Content>
     <p style={{padding: '0 10%'}}>
+      -DARY! <br/><br/>
       ps: estaremos esperando você nos mandar nossa passagem pra ir te visitar heheheh
     </p>
     </Container>

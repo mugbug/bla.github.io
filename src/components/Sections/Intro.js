@@ -7,7 +7,7 @@ const Marina = () => (
     text='Oi Marina,'
     type={WordArtThemes.BLUES}
     message={`
-      Um belo dia, assistindo HIMYM, percebemos que quando acontece uma coisa importante na nossa vida, a gente faz um site pra mostrar pras pessoas. Aqui concentramos todo o nosso carinho para que esteja sempre acessível quando você sentir saudade.
+      Um belo dia, assistindo HIMYM, percebemos que eles fazem site pra tudo (vide https://how-i-met-your-mother.fandom.com/wiki/Tie-in_sites). Então pensamos: porque não fazemos um site pra falar como a gente ama a Marina e concentrar todo o nosso carinho para que esteja sempre acessível para quando ela sentir saudade? So here it is! And it's LEGEND- wait for it...
     `}
     images = {[
       [
