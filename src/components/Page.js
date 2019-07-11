@@ -6,9 +6,9 @@ import Player from './Player';
 
 import WordArtText from './WordArtText';
 
-const Page = ({ text, message, type, images }) => (
+const Page = ({ text, message, type, images, audio }) => (
   <Container style={{height: 'auto', margin: '4em 0 7em 0'}}>
-    <Player />
+    <Player audio={audio} />
     <DoubleBounceInLeft duration={2}>
       <WordArtText text={text} type={type} />
     </DoubleBounceInLeft>

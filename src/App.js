@@ -42,7 +42,7 @@ function App() {
     <>
       <Container>
         <TitleContainerImage />
-        <Player />
+        <Player audio={require('./songs/fromUsToYou.mpeg')} />
         <RotateIn duration={2}>
           <WordArtText text='We love you Marina!' type={WordArtThemes.RAINBOW} fontSize='6em' />
         </RotateIn>

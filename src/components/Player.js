@@ -13,13 +13,16 @@ const PlayerContainer = styled.div`
 `;
 
 class Player extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      play: false
-    }
-    this.url = "http://streaming.tdiradio.com:8000/house.mp3";
-    this.audio = new Audio(this.url);
+  state = {
+    play: false
+  }
+
+  componentDidMount() {
+    this.audio = new Audio(this.props.audio);
+
+    this.audio.onended = () => {
+      this.setState({ play: false });
+    };
   }
 
   buttonIcon = () => (
