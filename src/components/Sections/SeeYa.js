@@ -47,7 +47,7 @@ const SeeYa = () => {
   const [showGif, updateShowGif] = useState(false);
 
   return <Container style={{height: 'auto', margin: '4em 0'}}>
-    <Player audio={require('../../songs/helloGoodbye.mp3')} />
+    <Player audio={require('../../songs/stressedOut.mp3')} />
     <Bounce duration={2} ><WordArtText text='Então... até logo!' type={WordArtThemes.SUPERHERO} marginBottom='1em'/></Bounce>
     <Content>
       <SquadPhoto src={require('../../images/squad 1.jpg')} alt='Best squad' />
