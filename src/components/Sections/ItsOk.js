@@ -8,7 +8,7 @@ const ItsOk = () => (
     type={WordArtThemes.RAINBOW}
     audio={require('../../songs/allStar.mp3')}
     message={`
-      A gente ainda vai se ver no futuro, porque sabe como é né, não vamos aguentar de saudade e vamos te que ir te visitar
+      A gente ainda vai se ver no futuro, porque sabe como é né, não vamos aguentar de saudade e vamos te que ir te visitar. Não vai ser um oceanozinho que vai separar a gente. E assim, meios tecnológicos estão ai pra ajudar nisso também. A gente super pode marcar de ir no tábuas enquanto você vai num pubzinho topzera por ai e fazer uma call pra você contar o tanto de país que você conheceu e dar uma aula de Holandês pra gente.
     `}
     images = {[
       [

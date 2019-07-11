@@ -8,7 +8,7 @@ const MissU = () => (
     type={WordArtThemes.PURPLE}
     audio={require('../../songs/redator.mp3')}
     message={`
-      É claro que vamos sentir saudades. Vamos lembrar de todas as coisas que vivemos por aqui e vamos sentir muita saudade. Fala sério, foram os melhores rolês possíveis, sem condição nenhuma.
+      É claro que vamos sentir saudades, né. Vamos lembrar de todas as coisas que vivemos por aqui e vamos sentir muita saudade. Fala sério, foram os melhores rolês possíveis, sem condição nenhuma.
     `}
     images = {[
       [

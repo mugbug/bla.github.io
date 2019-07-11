@@ -52,13 +52,12 @@ const SeeYa = () => {
     <Content>
       <SquadPhoto src={require('../../images/squad 1.jpg')} alt='Best squad' />
       <Column>
-        {showGif 
+        {showGif
           ? <>
           <SlideInUp duration={2} >
             <TextWithHint title='Duvido você clicar aqui' onClick={() => updateShowGif(true)}>
-            É claro que vamos sentir muita saudade de você -- e meios tecnológicos estão ai pra ajudar nisso.
-            Mas a gente está muuuuuito feliz por você ter essa oportunidade incrível e pela sua coragem de abraçá-la
-            mesmo sabendo de todos os desafios que estão por vir. We got your back!
+            A gente está muuuuuito feliz por você ter conseguido essa oportunidade incrível e pela sua coragem de abraçá-la
+            mesmo sabendo de todos os desafios que estão por vir. Pode ter certeza que a gente está aqui torcendo por você. We got your back!
             </TextWithHint>
           </SlideInUp>
           <FadeInWithSwing fadeInDuration={2} swingDuration={1} >
@@ -66,9 +65,8 @@ const SeeYa = () => {
           </FadeInWithSwing>
           </>
           : <TextWithHint title='Duvido você clicar aqui' onClick={() => updateShowGif(true)}>
-          É claro que vamos sentir muita saudade de você -- e meios tecnológicos estão ai pra ajudar nisso.
-          Mas a gente está muuuuuito feliz por você ter essa oportunidade incrível e pela sua coragem de abraçá-la
-          mesmo sabendo de todos os desafios que estão por vir. We got your back!
+          A gente está muuuuuito feliz por você ter conseguido essa oportunidade incrível e pela sua coragem de abraçá-la
+            mesmo sabendo de todos os desafios que estão por vir. Pode ter certeza que a gente está aqui torcendo por você. We got your back!
         </TextWithHint>
       }
     </Column>
