@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Player from './components/Player';
 import SeeYa from './components/Sections/SeeYa';
 import MissU from './components/Sections/MissU';
+import ItsOk from './components/Sections/ItsOk';
 import { RotateIn, BounceInRight } from './components/Animation';
 
 const bg = require('./images/header-bg.jpg');
@@ -59,6 +60,7 @@ function App() {
       </Container>
       <Intro />
       <MissU />
+      <ItsOk />
       <SeeYa />
       <Footer />
     </>
