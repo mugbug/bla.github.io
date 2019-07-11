@@ -6,7 +6,7 @@ const ItsOk = () => (
   <Page
     text='Mas tá tudo bemmmm'
     type={WordArtThemes.RAINBOW}
-    audio={require('../../songs/clearly.mp3')}
+    audio={require('../../songs/allStar.mp3')}
     message={`
       A gente ainda vai se ver no futuro, porque sabe como é né, não vamos aguentar de saudade e vamos te que ir te visitar
     `}

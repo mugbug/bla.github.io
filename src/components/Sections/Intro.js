@@ -9,6 +9,7 @@ const Marina = () => (
     message={`
       Um belo dia, assistindo HIMYM, percebemos que eles fazem site pra tudo (vide https://how-i-met-your-mother.fandom.com/wiki/Tie-in_sites). Então pensamos: porque não fazemos um site pra falar como a gente ama a Marina e concentrar todo o nosso carinho para que esteja sempre acessível para quando ela sentir saudade? So here it is! And it's LEGEND- wait for it...
     `}
+    audio={require('../../songs/clearly.mp3')}
     images = {[
       [
         require('../../images/bianca 8.jpg'),
