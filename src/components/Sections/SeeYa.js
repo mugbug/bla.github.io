@@ -14,12 +14,26 @@ const Content = styled.div`
   flex-direction: row;
   z-index: 10;
   justify-content: space-between;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
-const SquadPhoto = styled.img`
+const SquadPhoto = styled.div`
   margin-left: 10%;
   width: 39%;
-  height: -webkit-fill-available;
+  height: 800px;
+
+  @media (max-width: 800px) {
+    width: 79%;
+    height: 400px;
+  }
+  
+  background-image: url('${require('../../images/squad 1.jpg')}');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 `;
 
 const Column = styled.div`
@@ -32,6 +46,11 @@ const Column = styled.div`
   align-items: center;
 
   justify-content: space-around;
+
+  @media (max-width: 800px) {
+    margin-left: 10%;
+    width: 79%;
+  }
 `;
 
 /** bug no font-family, só aceita */
@@ -41,6 +60,10 @@ const TextWithHint = styled(TransparentButton)`
   font-size: 1.5em;
   text-align: end;
   cursor: url('https://i.ibb.co/mvnGx8Z/hangloose-cursor.png'), auto;
+
+  @media (max-width: 800px) {
+    text-align: center;
+  }
 `;
 
 const SeeYa = () => {
@@ -50,7 +73,7 @@ const SeeYa = () => {
     <Player audio={require('../../songs/stressedOut.mp3')} />
     <Bounce duration={2} ><WordArtText text='Então... até logo!' type={WordArtThemes.SUPERHERO} marginBottom='1em'/></Bounce>
     <Content>
-      <SquadPhoto src={require('../../images/squad 1.jpg')} alt='Best squad' />
+      <SquadPhoto />
       <Column>
         {showGif
           ? <>

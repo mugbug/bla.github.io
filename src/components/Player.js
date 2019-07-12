@@ -12,6 +12,10 @@ const PlayerContainer = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   position: absolute;
+
+  @media (max-width: 800px) {
+    z-index: 20;
+  }
 `;
 
 class Player extends React.Component {
